@@ -1,7 +1,7 @@
-import 'package:domining_layout/app/core/shared/app_images.dart';
-import 'package:domining_layout/app/modules/home/enitity/categories_entity.dart';
 import 'package:domining_layout/app/modules/home/widgets/list_cotegories.dart';
+import 'package:domining_layout/app/modules/home/widgets/list_products.dart';
 import 'package:domining_layout/app/modules/home/widgets/search_box.dart';
+import 'package:domining_layout/app/modules/login/login_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,7 +40,26 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(
                 height: 90,
                 child: CategoriesListWidgets(),
-              )
+              ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Best Selling',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextButtonWidget(
+                    onPressed: () {},
+                    text: 'See All',
+                  )
+                ],
+              ),
+              const SizedBox(height: 10),
+              const ListProductsWidget()
             ],
           ),
         ),
