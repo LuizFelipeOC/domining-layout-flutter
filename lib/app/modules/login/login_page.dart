@@ -108,8 +108,11 @@ class _LoginPageState extends State<LoginPage> {
                         width: MediaQuery.of(context).size.width,
                         height: 56,
                         child: ElevatedButtonWidget(
-                          color: Colors.greenAccent,
-                          onPressed: () {},
+                          color: Colors.blue.shade900,
+                          onPressed: () =>
+                              Navigator.of(context).pushReplacementNamed(
+                            '/home',
+                          ),
                           text: 'SIGN IN',
                         ),
                       ),
