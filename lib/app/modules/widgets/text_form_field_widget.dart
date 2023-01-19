@@ -24,7 +24,6 @@ class TextFormFielWidget extends StatelessWidget {
         color: Colors.grey,
       ),
       keyboardType: textInputType,
-      autofocus: true,
       decoration: InputDecoration(
         floatingLabelStyle: const TextStyle(
           color: Colors.greenAccent,
